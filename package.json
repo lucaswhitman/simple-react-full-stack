@@ -2,6 +2,11 @@
   "name": "simple-react-full-stack",
   "version": "1.0.0",
   "main": "src/server/index.ts",
+  "author": { 
+    "name" : "Lucas Whitman",
+    "email" : "lucasmichaelwhitman@gmail.com"
+  },
+  "license": "WTFPL",
   "scripts": {
     "build": "webpack --mode production",
     "start": "npm run build && node src/server/index.ts",
