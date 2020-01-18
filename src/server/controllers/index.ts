@@ -1,7 +1,5 @@
-import { UserController } from './User/User';
+import {UserController} from './User/User';
 
 const userController = new UserController();
 
-export {
-    userController
-};
+export {userController};
