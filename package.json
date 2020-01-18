@@ -9,10 +9,10 @@
   "license": "WTFPL",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.ts",
+    "start": "yarn run build && node src/server/index.ts",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon src/server/index.ts",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
