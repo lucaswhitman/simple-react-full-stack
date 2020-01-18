@@ -1,7 +1,9 @@
 ## Requirements
+
 - Node v13.2.0
 
 ## Quick Start
+
 ```bash
 #TODO: cleanup
 # Clone the repository
@@ -24,6 +26,14 @@ yarn start (or npm start)
 ```
 
 ## Documentation
+
+### Stack details:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [webpack](https://webpack.js.org/)
+- [Express](https://expressjs.com/)
 
 ### Folder Structure
 
