@@ -7,7 +7,7 @@
 ### Running in Docker
 
 ```
-docker-compose up -d --build
+docker-compose up --build
 ```
 
 ### Developing locally
@@ -21,12 +21,6 @@ yarn
 
 # Start development server
 yarn dev
-
-# Build for production
-yarn build
-
-# Start production server
-yarn start
 ```
 
 ## Documentation
@@ -40,6 +34,7 @@ yarn start
 - [Express](https://expressjs.com/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Docker](https://www.docker.com/)
 
 ### Folder Structure
 
