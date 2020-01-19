@@ -4,6 +4,14 @@
 
 ## Quick Start
 
+### Running in Docker
+
+```
+docker-compose up -d --build
+```
+
+### Developing locally
+
 ```bash
 # Go inside the directory
 cd simple-react-full-stack

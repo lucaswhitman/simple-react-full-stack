@@ -11,24 +11,25 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [{
-      exclude: /node_modules/,
-      test: /\.(t|j)sx?$/,
-      use: { loader: 'awesome-typescript-loader' }
-    },
-    {
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
-    },
-    {
-      test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-      loader: 'url-loader?limit=100000'
-    },
-    {
-      enforce: 'pre',
-      test: /\.(t|j)sx?$/,
-      loader: 'source-map-loader'
-    },
+    rules: [
+      {
+        exclude: /node_modules/,
+        test: /\.(t|j)sx?$/,
+        use: {loader: 'awesome-typescript-loader'}
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
+      },
+      {
+        enforce: 'pre',
+        test: /\.(t|j)sx?$/,
+        loader: 'source-map-loader'
+      }
     ]
   },
   resolve: {
@@ -37,8 +38,11 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
+    host: '0.0.0.0',
+    public: '0.0.0.0:3000',
+    disableHostCheck: true,
     proxy: {
-      '/api': 'http://localhost:8080'
+      '/api': 'http://0.0.0.0:8080'
     }
   },
   plugins: [
